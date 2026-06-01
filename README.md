@@ -10,7 +10,9 @@ Standalone Cinema download repo.
 
 ## Publish
 
-1. Push this folder to the `dude271/cinema` GitHub repository.
+1. Push this folder to the `dude2714/cinema` GitHub repository.
 2. In repo settings, set GitHub Pages source to GitHub Actions.
 3. The workflow in `.github/workflows/pages.yml` will publish the site from the repo root.
-4. Share the site URL and the direct APK URL.
+4. Share the site URL and the direct APK URL:
+	- Site: `https://dude2714.github.io/cinema/`
+	- APK: `https://dude2714.github.io/cinema/Cinema.apk`
