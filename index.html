@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cinema Download</title>
+  <meta name="description" content="Download Cinema APK" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: rgba(16, 22, 43, 0.88);
+      --panel-border: rgba(255, 255, 255, 0.08);
+      --text: #f3f6ff;
+      --muted: #afbddc;
+      --accent: #6ee7ff;
+      --accent-2: #8b5cf6;
+      --shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(110, 231, 255, 0.18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.20), transparent 30%),
+        linear-gradient(135deg, #050816 0%, #0b1020 48%, #111936 100%);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: clamp(24px, 4vw, 48px);
+      backdrop-filter: blur(18px);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(110, 231, 255, 0.12);
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 16px 0 14px;
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 58ch;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .button {
+      appearance: none;
+      border: 0;
+      text-decoration: none;
+      padding: 16px 22px;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #06111d;
+      background: linear-gradient(135deg, var(--accent), #a7f3d0);
+      box-shadow: 0 18px 40px rgba(110, 231, 255, 0.28);
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 44px rgba(110, 231, 255, 0.34);
+    }
+
+    .button.secondary {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      box-shadow: none;
+    }
+
+    .meta {
+      margin-top: 28px;
+      display: grid;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    code {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="eyebrow">Standalone APK</span>
+    <h1>Cinema</h1>
+    <p>Download the current Cinema build directly from this repository. The APK is bundled in the repo so you can install it without any external dependency.</p>
+    <div class="actions">
+      <a class="button" href="Cinema.apk" download>Download Cinema APK</a>
+      <a class="button secondary" href="Cinema.apk">Open APK</a>
+    </div>
+    <div class="meta">
+      <div>APK file: <code>Cinema.apk</code></div>
+      <div>Repo root is the site root, so GitHub Pages can serve this page directly.</div>
+      <div>After push, your download link will be <code>https://dude271.github.io/cinema/Cinema.apk</code></div>
+    </div>
+  </main>
+</body>
+</html>

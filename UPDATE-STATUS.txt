@@ -1,0 +1,6 @@
+Cinema migration complete
+From: C:\Users\johns\OneDrive\Desktop\apk
+To:   C:\Users\johns\OneDrive\Desktop\cinema
+Moved count: 1
+Moved items: Cinema.apk
+Updated: 2026-05-31 21:50:24
