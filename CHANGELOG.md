@@ -1,0 +1,7 @@
+# Changelog
+
+## v2026.06.01 - 2026-06-01T00:00:00Z
+- APK: Cinema.apk
+- Size: 42269065 bytes
+- SHA-256: F27B8AE1BFB6620B4A649A3CD01B98F90A06280B733B8EA7606D12FDD90988B7
+- Notes: Baseline build in standalone Cinema repo

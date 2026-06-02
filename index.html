@@ -132,9 +132,37 @@
     </div>
     <div class="meta">
       <div>APK file: <code>Cinema.apk</code></div>
+      <div>Version: <code id="release-version">loading...</code></div>
+      <div>Updated: <code id="release-date">loading...</code></div>
+      <div>SHA-256: <code id="release-sha">loading...</code></div>
       <div>Repo root is the site root, so GitHub Pages can serve this page directly.</div>
       <div>After push, your download link will be <code>https://dude2714.github.io/cinema/Cinema.apk</code></div>
     </div>
   </main>
+  <script>
+    async function loadReleaseInfo() {
+      const versionEl = document.getElementById('release-version');
+      const dateEl = document.getElementById('release-date');
+      const shaEl = document.getElementById('release-sha');
+
+      try {
+        const response = await fetch('release.json', { cache: 'no-store' });
+        if (!response.ok) {
+          throw new Error('release manifest missing');
+        }
+
+        const release = await response.json();
+        versionEl.textContent = release.version || 'unknown';
+        dateEl.textContent = release.updatedUtc || 'unknown';
+        shaEl.textContent = release.sha256 || 'unknown';
+      } catch (error) {
+        versionEl.textContent = 'unknown';
+        dateEl.textContent = 'unknown';
+        shaEl.textContent = 'unknown';
+      }
+    }
+
+    loadReleaseInfo();
+  </script>
 </body>
 </html>
