@@ -1,6 +1,19 @@
-Cinema migration complete
-From: C:\Users\johns\OneDrive\Desktop\apk
-To:   C:\Users\johns\OneDrive\Desktop\cinema
-Moved count: 1
-Moved items: Cinema.apk
-Updated: 2026-05-31 21:50:24
+Cinema checkpoint status
+Updated: 2026-06-01
+
+Repository:
+- Branch: master
+- Last commit: 1a60110 (Publish Cinema v4.0.1)
+
+Current known state:
+- Live APK and metadata were published for v4.0.1.
+- User reported installation succeeds on Nvidia Shield but app hangs on splash screen.
+- User also reported version label/download mismatch to re-check on next session.
+
+Next resume actions:
+1. Verify installed APK versionName/versionCode directly from the hosted Cinema.apk.
+2. Validate release.json values shown on the site match the hosted APK.
+3. If splash hang reproduces, revert to last known-good APK and republish metadata.
+
+Local workspace notes:
+- Keep local artifact folders out of git: .tools/, apk-work/, Cinema-4.0.1.apk
