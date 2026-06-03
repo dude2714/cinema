@@ -1,19 +1,17 @@
 Cinema checkpoint status
-Updated: 2026-06-01
+Updated: 2026-06-02
 
 Repository:
 - Branch: master
-- Last commit: 1a60110 (Publish Cinema v4.0.1)
+- Last commit at pause: 8b2fae9 (Rollback to stable Cinema APK to fix splash-screen freeze)
 
 Current known state:
-- Live APK and metadata were published for v4.0.1.
-- User reported installation succeeds on Nvidia Shield but app hangs on splash screen.
-- User also reported version label/download mismatch to re-check on next session.
+- Live Cinema.apk is the rollback stable build.
+- release.json and CHANGELOG.md were aligned to the stable hash.
+- User requested to pause Cinema work.
 
-Next resume actions:
-1. Verify installed APK versionName/versionCode directly from the hosted Cinema.apk.
-2. Validate release.json values shown on the site match the hosted APK.
-3. If splash hang reproduces, revert to last known-good APK and republish metadata.
+Pause note:
+Cinema work is intentionally stopped here.
 
-Local workspace notes:
-- Keep local artifact folders out of git: .tools/, apk-work/, Cinema-4.0.1.apk
+Next project:
+Create a standalone APK project from Desktop file "CyberFlix TV [3.6.0].apk" and brand it as Terrarium.
