@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v4.0.0 - 2026-06-03T02:04:51Z
+- APK: Cinema.apk
+- Size: 42269065 bytes
+- SHA-256: F27B8AE1BFB6620B4A649A3CD01B98F90A06280B733B8EA7606D12FDD90988B7
+- Notes: Rollback to last known-good original APK (startup freeze fix)
+
 ## v4.0.1 - 2026-06-02T01:13:59Z
 - APK: Cinema.apk
 - Size: 43302463 bytes
@@ -17,6 +23,8 @@
 - Size: 42269065 bytes
 - SHA-256: F27B8AE1BFB6620B4A649A3CD01B98F90A06280B733B8EA7606D12FDD90988B7
 - Notes: Baseline build in standalone Cinema repo
+
+
 
 
 

@@ -1,8 +1,8 @@
 ﻿{
-    "version":  "v4.0.1",
-    "updatedUtc":  "2026-06-02T01:13:59Z",
+    "version":  "v4.0.0",
+    "updatedUtc":  "2026-06-03T02:04:51Z",
     "apkFile":  "Cinema.apk",
-    "sizeBytes":  43302463,
-    "sha256":  "54E1326165561153A948BC432CD63B58975CD04A03B0D653438CE241AFFAE665",
-    "notes":  "APK-only rebuild"
+    "sizeBytes":  42269065,
+    "sha256":  "F27B8AE1BFB6620B4A649A3CD01B98F90A06280B733B8EA7606D12FDD90988B7",
+    "notes":  "Rollback to last known-good original APK (startup freeze fix)"
 }
